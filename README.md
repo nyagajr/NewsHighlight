@@ -29,7 +29,7 @@ It has been used to design the backend and the frontend
 
 ## User Requirements.
 To use the application on the web follow the outlined steps:
-1. Visit the following page https://github.com/nyagajr/NewsHighlight
+1. Visit the following page https://github.com/nyagajr/newshighlight
 2. clone the repository
 3. make sure you install the python requirements and then run "./start.sh"
 
