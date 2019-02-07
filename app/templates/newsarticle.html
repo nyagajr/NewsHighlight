@@ -1,0 +1,34 @@
+<html>
+
+<head>
+  <link href="{{url_for('static',filename='css/style.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='css/bootstrap.css')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='css/bootstrap.css.map')}}" rel="stylesheet">
+  <link href="{{url_for('static',filename='css/bootstrap.min.css')}}" rel="stylesheet">
+</head>
+
+</head>
+
+<body>
+  <a href="/" class="btn btn-info btn-md">
+  <span class="glyphicon glyphicon-home"></span> Home
+</a>
+  <div class='row'>
+    <div class='col-md-12'>
+      <ul>
+        {% for news_articles in articles %}
+        <p><{{news_articles.name.name}}</p>
+        <strong><h3>Author: {{news_articles.author}}</strong></h3>
+        <p>{{news_articles.description}}</p>
+        <span class="btn btn-info btn-sm"><a class='fnt' href={{news_articles.url}} >details</a></span>
+        <br><br>
+        <p><strong><em>Posted on : {{news_articles.publishedAt}}</em></strong></p>
+        <hr>
+        {% endfor %}
+      </ul>
+    </div>
+    </div>
+
+</body>
+
+</html>
